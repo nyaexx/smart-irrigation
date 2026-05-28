@@ -1,6 +1,6 @@
 <div align="center">
 <p>
-<img src="https://github.com/nyaexx/bitki-sulama/blob/main/.github/biktisulamayenilogo.png" width="150px">
+<img src="https://github.com/nyaexx/smart-irrigation/blob/main/.github/biktisulamayenilogo.png" width="150px">
 </p>
 <h1>Akıllı Sulama</h1>
 <p>
@@ -8,10 +8,10 @@
 | 🇹🇷 Türkçe
 </p>
 <p>
-<a href="https://github.com/nyaexx/bitki-sulama/releases/latest"><img src="https://img.shields.io/github/v/release/nyaexx/bitki-sulama?display_name=tag&label=Ak%C4%B1ll%C4%B1%20Sulama" alt="Latest Release" /></a>
-<a href="https://github.com/nyaexx/bitki-sulama/releases"><img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/nyaexx/bitki-sulama/total?label=%C4%B0ndirmeler" /></a>
-<a href="https://github.com/nyaexx/bitki-sulama/commits/main/"><img alt="GitHub commits since latest release" src="https://img.shields.io/github/commits-since/nyaexx/bitki-sulama/latest?label=Son%20S%C3%BCr%C3%BCmden%20Beri%20Commit'ler" /></a>
-<a href="https://github.com/nyaexx/bitki-sulama/blob/master/LICENSE"><img src="https://img.shields.io/github/license/nyaexx/bitki-sulama?label=Lisans" alt="License" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/nyaexx/smart-irrigation?label=Ak%C4%B1ll%C4%B1%20Sulama" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/releases"><img alt="GitHub Downloads (all assets, all releases)" src="https://img.shields.io/github/downloads/nyaexx/smart-irrigation/total?label=%C4%B0ndirmeler" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/commits/main/"><img alt="GitHub commits since latest release" src="https://img.shields.io/github/commits-since/nyaexx/smart-irrigation/latest?label=Son%20S%C3%BCr%C3%BCmden%20Beri%20Commit'ler" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/blob/master/LICENSE"><img src="https://img.shields.io/github/license/nyaexx/smart-irrigation?label=Lisans" alt="License" /></a>
 </p>
 </div>
 
@@ -33,7 +33,7 @@ Bu proje, belirli bir bitkinin toprak nemi ve hava değerlerini ölçerek bir Ar
 
   - Ölçüm: Sensörler toprağın nemini, havanın sıcaklığını ve nemini ölçer.
   - Karar: Toprak kuruduğunda sistem bunu algılar, kırmızı LED'i yakar ve su pompasını (röleyi) otomatik olarak çalıştırır.
-     - Kullandığınız bitki türünün su isteğine göre Arduino kodundaki [**void loop()**](https://github.com/nyaexx/bitki-sulama/blob/2f3320e30a38abe428c3f1918f5442bd092b8827/arduinocodes/arduinocodes.ino#L53) içinde bulunan nem_orani eşik değerlerini düzenlemeniz önerilir.
+     - Kullandığınız bitki türünün su isteğine göre Arduino kodundaki [**void loop()**](https://github.com/nyaexx/smart-irrigation/blob/2f3320e30a38abe428c3f1918f5442bd092b8827/arduinocodes/arduinocodes.ino#L53) içinde bulunan nem_orani eşik değerlerini düzenlemeniz önerilir.
   - Bilgilendirme: Toprağın durumu (Kuru, Normal, Islak) LED'ler aracılığıyla gösterilir ve tüm veriler Bluetooth ile telefona gönderilir.
   - Uzaktan Kontrol: İstenildiği zaman Bluetooth bağlantısıyla uygulama üzerinden tek bir komutla manuel sulama başlatılabilir.
 
@@ -76,13 +76,13 @@ Bu proje, belirli bir bitkinin toprak nemi ve hava değerlerini ölçerek bir Ar
 ### Devre Kurulumu ve Kullanımı:
 Kurulum için aşağıdaki bağlantı şemasına göre devreyi kurun:
 <p align="center">
-  <img src="https://github.com/nyaexx/bitki-sulama/blob/main/arduinocodes/circuitschematics.png" width="">
+  <img src="https://github.com/nyaexx/smart-irrigation/blob/main/arduinocodes/circuitschematics.png" width="">
 </p>
 
 > [!NOTE]
-> Kullanım içinse [bu dizindeki](https://github.com/nyaexx/bitki-sulama/tree/main/arduinocodes) Arduino kodlarını ve libraries klasöründeki kütüphaneleri cihazınıza yükleyip kullanabilirsiniz.
+> Kullanım içinse [bu dizindeki](https://github.com/nyaexx/smart-irrigation/tree/main/arduinocodes) Arduino kodlarını ve libraries klasöründeki kütüphaneleri cihazınıza yükleyip kullanabilirsiniz.
 >
-> Unutmayın eğer orjinal Arduino Uno kullanmıyorsanız kesinlikle [Arduino Kodları](https://github.com/nyaexx/bitki-sulama/tree/main/arduinocodes) dinizindeki libraries klasöründe bulunan CH340 kütüphanesinin kurulumunu yapınız. Aksi takdirde kurulumunu yapmanıza gerek yoktur.
+> Unutmayın eğer orjinal Arduino Uno kullanmıyorsanız kesinlikle [CH340 kütüphanesinin](https://github.com/nyaexx/smart-irrigation/blob/main/arduinocodes/libraries/arduino_CH340.zip) kurulumunu yapınız. Aksi takdirde kurulumunu yapmanıza gerek yoktur.
 
 > [!IMPORTANT]
 > ``Bluetooht Bağlantısı İçin Yapılması Gerekenler:``
@@ -96,6 +96,6 @@ Eğer bluetooth bağlı gözükürken eşleşme yapılamazsa devrede elektriği 
 ---
 
 > [!NOTE]
-> Yardım veya herhangi bir soru için [issue](https://github.com/nyaexx/bitki-sulama/issues) oluşturabilirsiniz.
+> Yardım veya herhangi bir soru için [issue](https://github.com/nyaexx/smart-irrigation/issues) oluşturabilirsiniz.
 > 
 > Repoya bir şey eklemek ister veya bir hatayı düzeltmek isterseniz pull request atabilirsiniz.
