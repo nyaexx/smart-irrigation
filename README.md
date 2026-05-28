@@ -1,6 +1,6 @@
 <div align="center">
 <p>
-<img src="https://github.com/nyaexx/bitki-sulama/blob/main/.github/biktisulamayenilogo.png" width="150px">
+<img src="https://github.com/nyaexx/smart-irrigation/blob/main/.github/biktisulamayenilogo.png" width="150px">
 </p>
 <h1>Smart Irrigation</h1>
 <p>
@@ -8,10 +8,10 @@
 <a href="README-tr.md"> 🇹🇷 Türkçe</a>
 </p>
 <p>
-<a href="https://github.com/nyaexx/bitki-sulama/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/nyaexx/bitki-sulama?label=Smart%20Irrigation" /></a>
-<a href="https://github.com/nyaexx/bitki-sulama/releases"><img src="https://img.shields.io/github/downloads/nyaexx/bitki-sulama/total?label=Downloads" alt="Downloads" /></a>
-<a href="https://github.com/nyaexx/bitki-sulama/commits/main/"><img alt="GitHub commits since latest release" src="https://img.shields.io/github/commits-since/nyaexx/bitki-sulama/latest?label=Commits%20Since%20Last%20Release" /></a>
-<a href="https://github.com/nyaexx/bitki-sulama/blob/master/LICENSE"><img src="https://img.shields.io/github/license/nyaexx/bitki-sulama?label=License" alt="License" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/nyaexx/smart-irrigation?label=Smart%20Irrigation" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/releases"><img src="https://img.shields.io/github/downloads/nyaexx/smart-irrigation/total?label=Downloads" alt="Downloads" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/commits/main/"><img alt="GitHub commits since latest release" src="https://img.shields.io/github/commits-since/nyaexx/smart-irrigation/latest?label=Commits%20Since%20Last%20Release" /></a>
+<a href="https://github.com/nyaexx/smart-irrigation/blob/master/LICENSE"><img src="https://img.shields.io/github/license/nyaexx/smart-irrigation?label=License" alt="License" /></a>
 </p>
 </div>
 
@@ -36,7 +36,7 @@ This project enables automatic irrigation using an Arduino circuit by measuring 
 
   - Measurement: Sensors measure soil moisture, air temperature, and air humidity.
   - Decision: When the soil is dry, the system detects this, lights up the red LED, and automatically activates the water pump (relay).
-      - It is recommended to adjust the nem_orani (moisture rate) threshold values within the [**void loop()**](https://github.com/nyaexx/bitki-sulama/blob/2f3320e30a38abe428c3f1918f5442bd092b8827/arduinocodes/arduinocodes.ino#L53) in the Arduino code according to the water requirements of your specific plant type.
+      - It is recommended to adjust the nem_orani (moisture rate) threshold values within the [**void loop()**](https://github.com/nyaexx/smart-irrigation/blob/2f3320e30a38abe428c3f1918f5442bd092b8827/arduinocodes/arduinocodes.ino#L53) in the Arduino code according to the water requirements of your specific plant type.
   - Information: Soil status (Dry, Normal, Wet) is displayed via LEDs, and all data is sent to the phone via Bluetooth.
   - Remote Control: Manual irrigation can be started at any time with a single command through the app via Bluetooth connection.
 
@@ -65,7 +65,7 @@ This project enables automatic irrigation using an Arduino circuit by measuring 
 **How to Run?**
 
 - Clone the Repository:
-   -  git clone [https://github.com/nyaexx/bitki-sulama/](https://github.com/nyaexx/bitki-sulama/)
+   -  git clone [https://github.com/nyaexx/smart-irrigation/](https://github.com/nyaexx/smart-irrigation/)
 - Open with Android Studio.
 
 - Once Gradle sync is complete, build and install it on your physical device.
@@ -78,13 +78,13 @@ This project enables automatic irrigation using an Arduino circuit by measuring 
 Set up the circuit according to the connection diagram below:
 
 <p align="center">
-<img src="https://github.com/nyaexx/bitki-sulama/blob/main/arduinocodes/circuitschematics.png" width="">
+<img src="https://github.com/nyaexx/smart-irrigation/blob/main/arduinocodes/circuitschematics.png" width="">
 </p>
 
 >[!NOTE]
->For usage, you can upload the Arduino codes and the libraries located in [this](https://github.com/nyaexx/bitki-sulama/tree/main/arduinocodes) directory to your device.
+>For usage, you can upload the Arduino codes and the libraries located in [this](https://github.com/nyaexx/smart-irrigation/tree/main/arduinocodes) directory to your device.
 >
->Remember, if you are not using an original Arduino Uno, you must install the CH340 driver found in the libraries folder within the [Arduino Codes](https://github.com/nyaexx/bitki-sulama/tree/main/arduinocodes) directory. Otherwise, installation is not necessary.
+>Remember, if you are not using an original Arduino Uno, you must install the [CH340 driver](https://github.com/nyaexx/smart-irrigation/blob/main/arduinocodes/libraries/arduino_CH340.zip). Otherwise, installation is not necessary.
 
 >[!IMPORTANT]
 >``Requirements for Bluetooth Connection:``
@@ -94,6 +94,6 @@ Set up the circuit according to the connection diagram below:
 >If the device cannot be paired while Bluetooth appears connected, disconnect the power from the circuit, wait until the lights turn off, and reconnect the power; this should resolve the issue.
 
 >[!NOTE]
->You can create an [issue](https://github.com/nyaexx/bitki-sulama/issues) for help or any question.
+>You can create an [issue](https://github.com/nyaexx/smart-irrigation/issues) for help or any question.
 >
 >If you would like to add something to the repo or fix a bug, feel free to submit a pull request.
